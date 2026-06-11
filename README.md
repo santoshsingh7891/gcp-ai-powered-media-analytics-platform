@@ -10,7 +10,7 @@ This project demonstrates practical implementation of cloud-native architecture,
 
 ## Solution Architecture
 
-![Architecture](images/architecture.png)
+![Architecture](docs/architecture.png)
 
 ### Architecture Flow
 
@@ -169,17 +169,14 @@ gcp-ai-powered-media-analytics-platform
 │   └── requirements.txt
 │
 ├── docs/
-│   └── screenshots/
-│       ├── cloud-storage-bucket.png
-│       ├── pubsub-topic.png
-│       ├── cloud-function-overview.png
-│       ├── bigquery-dataset.png
-│       ├── bigquery-query-results.png
-│       ├── dashboard-overview.png
-│       └── dashboard-analytics.png
-│
-├── images/
-│   └── architecture.png
+│   ├── architecture.png
+│   ├── cloud-storage-bucket.png
+│   ├── pubsub-topic.png
+│   ├── cloud-function-overview.png
+│   ├── bigquery-dataset.png
+│   ├── bigquery-query-results.png
+│   ├── dashboard-overview.png
+│   └── dashboard-analytics.png
 │
 ├── README.md
 └── .gitignore
@@ -219,27 +216,31 @@ terraform apply
 
 ### Cloud Storage Bucket
 
-![Cloud Storage](docs/screenshots/cloud-storage-bucket.png)
+![Cloud Storage](docs/cloud-storage-bucket.png)
 
 ### Pub/Sub Topic
 
-![PubSub](docs/screenshots/pubsub-topic.png)
+![PubSub](docs/pubsub-topic.png)
 
 ### Cloud Function Gen2
 
-![Cloud Function](docs/screenshots/cloud-function-overview.png)
+![Cloud Function](docs/cloud-function-overview.png)
 
 ### BigQuery Dataset
 
-![BigQuery](docs/screenshots/bigquery-dataset.png)
+![BigQuery](docs/bigquery-dataset.png)
+
+### BigQuery Query Results
+
+![BigQuery Query Results](docs/bigquery-query-results.png)
 
 ### Analytics Dashboard
 
-![Dashboard](docs/screenshots/dashboard-overview.png)
+![Dashboard](docs/dashboard-overview.png)
 
 ### Dashboard Analytics
 
-![Dashboard Analytics](docs/screenshots/dashboard-analytics.png)
+![Dashboard Analytics](docs/dashboard-analytics.png)
 
 ---
 
@@ -291,11 +292,6 @@ terraform apply
 
 ---
 
-## Resume Description
-
-Designed and implemented an AI-Powered Media Analytics Platform on Google Cloud Platform using Cloud Storage, Pub/Sub, Cloud Functions Gen2, Vertex AI Gemini, BigQuery, Looker Studio, and Terraform. Automated media classification, AI-generated summaries, event-driven processing, analytics storage, and dashboard reporting using cloud-native and serverless technologies.
-
----
 
 ## Connect With Me
 
