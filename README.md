@@ -307,7 +307,7 @@ GitHub:
 https://github.com/santoshsingh7891
 
 LinkedIn:
-https://www.linkedin.com/in/YOUR-LINKEDIN-ID
+https://www.linkedin.com/in/santosh-singh-141a5775/
 
 ### Core Skills
 
