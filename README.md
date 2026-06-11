@@ -304,11 +304,3 @@ https://github.com/santoshsingh7891
 
 LinkedIn:
 https://www.linkedin.com/in/santosh-singh-141a5775/
-
-### Core Skills
-
-AWS • Azure • GCP • Terraform • Kubernetes • Docker • Jenkins • Ansible • Python • DevOps • Cloud Architecture • CI/CD
-
----
-
-⭐ If you found this project useful, please consider starring the repository.
