@@ -1,72 +1,55 @@
 # AI-Powered Media Analytics Platform on Google Cloud Platform
 
-## Project Overview
-
-This project demonstrates an end-to-end event-driven serverless media analytics platform built on Google Cloud Platform (GCP).
-
-The platform automatically processes uploaded media files, generates AI-powered insights using Vertex AI Gemini, stores analytics in BigQuery, and provides reporting capabilities.
-
 ## Architecture
 
-User Upload
-|
-v
-Cloud Storage
-|
-v
-Pub/Sub
-|
-v
-Cloud Function Gen2
-|
-v
-Vertex AI Gemini
-|
-v
-BigQuery
-|
-v
-Looker Studio Dashboard
+![Architecture](images/architecture.png)
 
-## Services Used
+## Overview
 
-- Google Cloud Storage
-- Pub/Sub
-- Cloud Functions Gen2
-- Vertex AI Gemini
-- BigQuery
-- Terraform
-- Looker Studio
+An end-to-end serverless media analytics platform built on Google Cloud Platform using Cloud Storage, Pub/Sub, Cloud Functions Gen2, Vertex AI Gemini, BigQuery, and Looker Studio.
 
-## Key Features
+## Solution Flow
 
-- Event-driven architecture
-- Serverless processing
-- AI-powered media classification
-- AI-generated summaries
-- Metadata analytics
-- Infrastructure as Code (Terraform)
-- Dashboard reporting
-
-## Repository Structure
-
-```text
-terraform/
-cloud-function/
-docs/
-images/
-```
+1. User uploads media files to Cloud Storage
+2. Pub/Sub receives upload events
+3. Cloud Function Gen2 processes the event
+4. Vertex AI Gemini classifies content and generates insights
+5. Results are stored in BigQuery
+6. Looker Studio visualizes analytics dashboards
 
 ## Technologies
 
 - Google Cloud Platform (GCP)
 - Terraform
 - Python
-- Cloud Functions Gen2
+- Cloud Storage
 - Pub/Sub
-- BigQuery
+- Cloud Functions Gen2
 - Vertex AI Gemini
+- BigQuery
 - Looker Studio
+
+## Screenshots
+
+### Cloud Storage
+
+![Cloud Storage](docs/screenshots/cloud-storage-bucket.png)
+
+### Pub/Sub
+
+![PubSub](docs/screenshots/pubsub-topic.png)
+
+### Cloud Function
+
+![Cloud Function](docs/screenshots/cloud-function-overview.png)
+
+### BigQuery
+
+![BigQuery](docs/screenshots/bigquery-dataset.png)
+
+### Dashboard
+
+![Dashboard](docs/screenshots/dashboard-overview.png)
 
 ## Deployment
 
@@ -76,6 +59,15 @@ terraform plan
 terraform apply
 ```
 
-## Resume Project Summary
+## Skills Demonstrated
 
-Designed and implemented an AI-powered event-driven media analytics platform on Google Cloud Platform using Cloud Storage, Pub/Sub, Cloud Functions Gen2, Vertex AI Gemini, BigQuery, and Terraform. Automated media classification, AI-generated summaries, metadata analytics, and reporting dashboards using cloud-native services.
+- Infrastructure as Code (Terraform)
+- Event-Driven Architecture
+- Serverless Computing
+- AI/ML Integration using Vertex AI Gemini
+- Data Analytics using BigQuery
+- Dashboard Development using Looker Studio
+
+## Author
+
+Santosh Singh
