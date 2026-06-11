@@ -1,20 +1,18 @@
 # AI-Powered Media Analytics Platform on Google Cloud Platform
 
-## Architecture
+## Project Overview
 
-![Architecture](images/architecture.png)
+The AI-Powered Media Analytics Platform is an end-to-end serverless and event-driven solution built on Google Cloud Platform (GCP). The platform automatically processes uploaded media files, classifies content using Vertex AI Gemini, stores analytics data in BigQuery, and visualizes insights through interactive dashboards.
 
----
-
-## Overview
-
-This project demonstrates an end-to-end serverless media analytics platform built on Google Cloud Platform (GCP). The solution automatically processes uploaded media files, generates AI-powered insights using Vertex AI Gemini, stores analytics data in BigQuery, and visualizes results through Looker Studio dashboards.
-
-The infrastructure is provisioned using Terraform, enabling Infrastructure as Code (IaC) and repeatable deployments.
+This project demonstrates practical implementation of cloud-native architecture, Infrastructure as Code (IaC), event-driven processing, serverless computing, and Generative AI integration on Google Cloud.
 
 ---
 
 ## Solution Architecture
+
+![Architecture](images/architecture.png)
+
+### Architecture Flow
 
 ```text
 User Upload
@@ -40,49 +38,115 @@ Looker Studio Dashboard
 
 ---
 
-## Solution Flow
+## Business Scenario
 
-1. User uploads media files to Cloud Storage.
-2. Cloud Storage generates an event notification.
-3. Pub/Sub receives the event.
-4. Cloud Function Gen2 processes the uploaded media.
-5. Vertex AI Gemini classifies the content and generates insights.
-6. Results are stored in BigQuery.
-7. Looker Studio dashboards visualize analytics and reports.
+Organizations often receive large volumes of media content such as:
+
+* Documents (PDF)
+* Images
+* Audio Files
+* Video Files
+
+Manual classification and analysis of such content is time-consuming and error-prone.
+
+This solution automates:
+
+* Media ingestion
+* Event processing
+* Content classification
+* AI-generated summaries
+* Analytics reporting
+* Dashboard visualization
+
+using Google Cloud native services.
 
 ---
 
-## Project Outcomes
+## Key Features
 
-* Automated media classification using Vertex AI Gemini.
-* Generated AI-powered metadata and insights.
-* Implemented event-driven serverless processing.
-* Stored structured analytics data in BigQuery.
-* Built interactive reporting dashboards using Looker Studio.
-* Provisioned cloud infrastructure using Terraform.
-* Demonstrated cloud-native architecture on Google Cloud Platform.
+* Event-driven architecture
+* Serverless processing using Cloud Functions Gen2
+* AI-powered classification using Vertex AI Gemini
+* Automated metadata extraction
+* BigQuery analytics storage
+* Interactive dashboards using Looker Studio
+* Infrastructure provisioning using Terraform
+* Cloud-native scalable architecture
 
 ---
 
-## Technologies Used
+## Technology Stack
 
-### Cloud Services
+### Cloud Platform
+
+* Google Cloud Platform (GCP)
+
+### Infrastructure as Code
+
+* Terraform
+
+### Compute
+
+* Cloud Functions Gen2
+
+### Storage
 
 * Google Cloud Storage
+
+### Messaging
+
 * Google Pub/Sub
-* Cloud Functions Gen2
-* Vertex AI Gemini
+
+### Analytics
+
 * BigQuery
 * Looker Studio
 
-### DevOps & Automation
+### AI / ML
 
-* Terraform
-* GitHub
+* Vertex AI Gemini
 
-### Programming
+### Programming Language
 
 * Python
+
+### Version Control
+
+* Git
+* GitHub
+
+---
+
+## Solution Workflow
+
+### Step 1: Media Upload
+
+Users upload media files to Cloud Storage.
+
+### Step 2: Event Generation
+
+Cloud Storage generates an event notification.
+
+### Step 3: Event Processing
+
+Pub/Sub receives the event and triggers Cloud Function Gen2.
+
+### Step 4: AI Processing
+
+Cloud Function invokes Vertex AI Gemini to:
+
+* Classify content
+* Generate summaries
+* Generate metadata
+* Categorize media
+
+### Step 5: Data Storage
+
+Processed results are stored in BigQuery.
+
+### Step 6: Visualization
+
+Looker Studio dashboards display analytics and insights.
 
 ---
 
@@ -125,13 +189,27 @@ gcp-ai-powered-media-analytics-platform
 
 ## Infrastructure Deployment
 
+Initialize Terraform:
+
 ```bash
 terraform init
+```
 
+Validate Configuration:
+
+```bash
 terraform validate
+```
 
+Review Changes:
+
+```bash
 terraform plan
+```
 
+Deploy Infrastructure:
+
+```bash
 terraform apply
 ```
 
@@ -167,23 +245,55 @@ terraform apply
 
 ## Skills Demonstrated
 
+### Cloud Engineering
+
 * Google Cloud Platform (GCP)
-* Infrastructure as Code (Terraform)
-* Event-Driven Architecture
-* Serverless Computing
+* Cloud Storage
+* Pub/Sub
 * Cloud Functions Gen2
-* Vertex AI Gemini Integration
-* BigQuery Analytics
-* Data Engineering
-* Dashboard Development
-* Python Development
-* Cloud Solution Architecture
+* BigQuery
+
+### DevOps
+
+* Terraform
+* Infrastructure as Code
+* GitHub
+
+### Data Engineering
+
+* Event-Driven Processing
+* Data Analytics
+* BigQuery
+
+### AI Engineering
+
+* Vertex AI
+* Gemini
+* Generative AI Integration
+
+### Architecture
+
+* Serverless Architecture
+* Cloud-Native Design
+* Scalable Analytics Platform
 
 ---
 
-## Business Value
+## Project Outcomes
 
-This platform enables organizations to automatically analyze uploaded media content, generate AI-powered insights, centralize analytics data, and visualize trends through dashboards. The solution reduces manual effort and provides scalable, cloud-native analytics capabilities.
+* Automated media classification
+* AI-generated summaries
+* Event-driven processing
+* Centralized analytics storage
+* Interactive dashboards
+* Scalable cloud-native architecture
+* Infrastructure automation using Terraform
+
+---
+
+## Resume Description
+
+Designed and implemented an AI-Powered Media Analytics Platform on Google Cloud Platform using Cloud Storage, Pub/Sub, Cloud Functions Gen2, Vertex AI Gemini, BigQuery, Looker Studio, and Terraform. Automated media classification, AI-generated summaries, event-driven processing, analytics storage, and dashboard reporting using cloud-native and serverless technologies.
 
 ---
 
@@ -193,13 +303,16 @@ This platform enables organizations to automatically analyze uploaded media cont
 
 Cloud Architect | DevOps Engineer | Multi-Cloud Professional (AWS | Azure | GCP)
 
-* GitHub: https://github.com/santoshsingh7891
-* LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN-ID
+GitHub:
+https://github.com/santoshsingh7891
+
+LinkedIn:
+https://www.linkedin.com/in/YOUR-LINKEDIN-ID
 
 ### Core Skills
 
-Terraform • Kubernetes • Docker • Jenkins • Ansible • AWS • Azure • GCP • Python • DevOps • Cloud Architecture • CI/CD
+AWS • Azure • GCP • Terraform • Kubernetes • Docker • Jenkins • Ansible • Python • DevOps • Cloud Architecture • CI/CD
 
 ---
 
-⭐ If you found this project useful, feel free to star the repository.
+⭐ If you found this project useful, please consider starring the repository.
